@@ -1,0 +1,57 @@
+.lds-css
+  position absolute
+  top 0
+  right 0
+  left 0
+  bottom 0
+  display flex
+  flex-direction column
+  justify-content center
+  align-items center
+  z-index 9999
+  background rgba(255, 255, 255, 0.15)
+  &.transparent
+    background rgba(255, 255, 255, 0)
+@keyframes lds-rolling
+  0%
+    -webkit-transform translate(-50%, -50%) rotate(0deg)
+    transform translate(-50%, -50%) rotate(0deg)
+  100%
+    -webkit-transform translate(-50%, -50%) rotate(360deg)
+    transform translate(-50%, -50%) rotate(360deg)
+.lds-text
+  margin-top 20px
+  flex none
+  clear both
+  float none
+  width 100%
+  position relative
+  font-size 28px
+  line-height 140%
+  text-align center
+  padding 0 80px
+  box-sizing border-box
+.lds-rolling
+  flex none
+  width 100%
+  position relative
+  height 180px
+.lds-rolling div, .lds-rolling div:after
+  position absolute
+  width 180px
+  height 180px
+  border 20px solid #1c90fb
+  border-top-color transparent
+  border-radius 50%
+.lds-rolling div
+  -webkit-animation lds-rolling 0.7s linear infinite
+  animation lds-rolling 0.7s linear infinite
+  top 100px
+  left 100px
+.lds-rolling div:after
+  -webkit-transform rotate(90deg)
+  transform rotate(90deg)
+.lds-rolling
+  width 100px !important
+  height 100px !important
+  transform translate(-50px, -50px) scale(0.5) translate(50px, 50px)

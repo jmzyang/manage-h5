@@ -1,0 +1,98 @@
+.org-card
+  background-color #fff
+  width 100%
+  box-sizing content-box
+  .title
+    height 88px
+    line-height 88px
+    color #303030
+    font-size 30px
+    border-bottom #E1E8EB 1PX solid
+    margin-right 20px
+    display flex
+    position relative
+    .van-checkbox
+      flex 1
+      display flex
+      height 88px
+      line-height 88px
+      align-items center
+      .van-checkbox__icon
+        flex none
+      .van-checkbox__label
+        display block
+        flex 1
+        height 88px
+        line-height 88px
+    .toggle
+      position absolute
+      right 0
+      width 88px
+      height 88px
+      line-height 88px
+      text-align center
+      .title-arrow
+        display inline-block
+        transform rotate(90deg)
+        font-size 20px
+        color #ABABAB
+        transition .1s
+        &.active
+          transform rotate(-90deg)
+  .list
+    padding-left 60px
+    transition 0.1s
+    height 0
+    overflow hidden
+    .title
+      margin-right 0
+    &.active
+      height auto
+    .list-item
+      border-bottom #E1E8EB 1PX solid
+      margin-right 20px
+      .van-checkbox
+        width 100%
+        display flex
+        align-items center
+        .van-checkbox__label
+          flex 1
+          .check-lable
+            display flex
+            width 100%
+            height 104px
+            align-items center
+            .icon
+              width 66px
+              height 66px
+              border-radius 50%
+            .base-info
+              padding-left 12px
+              flex-grow 3
+              .name
+                color #333333
+                font-size 28px
+                line-height 40px
+                text-overflow ellipsis
+                white-space nowrap
+                overflow hidden
+              .job
+                color #666666
+                font-size 24px
+                line-height 33px
+                text-overflow ellipsis
+                white-space nowrap
+                overflow hidden
+            .phone
+              color #666666
+              font-size 24px
+              flex-grow 3
+            .email
+              color #666666
+              font-size 24px
+              flex-grow 4
+            .base-info,.phone,.email
+              width 0
+              text-overflow ellipsis
+              white-space nowrap
+              overflow hidden

@@ -1,0 +1,40 @@
+.van-tabbar-item {
+  flex: 1;
+  display: flex;
+  line-height: 1;
+  font-size: 12px;
+  color: #7d7e80;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.van-tabbar-item__icon {
+  font-size: 18px;
+  position: relative;
+  margin-bottom: 5px;
+}
+.van-tabbar-item__icon .van-icon {
+  display: block;
+  min-width: 1em;
+}
+.van-tabbar-item__icon--dot::after {
+  top: 0;
+  right: -8px;
+  width: 8px;
+  height: 8px;
+  content: ' ';
+  position: absolute;
+  border-radius: 100%;
+  background-color: #f44;
+}
+.van-tabbar-item__icon img {
+  height: 18px;
+  display: block;
+}
+.van-tabbar-item--active {
+  color: #007AFF;
+}
+.van-tabbar-item .van-info {
+  margin-top: 2px;
+}
+/*# sourceMappingURL=index.css.map */

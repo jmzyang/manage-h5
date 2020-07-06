@@ -1,0 +1,168 @@
+.edit-issue
+  flex 1
+  display flex
+  flex-direction column
+  position relative
+  color #333333
+  font-weight 400
+.edit-issue-container
+  flex 1
+  margin 20px 0
+  overflow-y: auto
+  .edit-issue-box
+    background-color #FFFFFF
+    padding 0px 35px
+    .title
+      font-size 30px
+      line-height 88px
+      margin 0px 15px
+    & > textarea
+      margin 15px 0
+      width 100%
+      height 165px
+      padding 20px
+      background #ffffff
+      border none
+      resize none
+      font-size 32px
+      line-height 48px
+    .issue-file-upload-button
+      padding 30px 0
+      height 110px
+      line-height 40px
+      color #B2B2B2
+      text-align right
+      box-sizing border-box
+      .upload-button
+        position relative
+        width 60px
+        display inline-block
+        vertical-align middle
+        .iconfont
+          font-size 38px
+          color #007AFF
+        & > input
+            width 100%
+            height 100%
+            border none
+            position absolute
+            top 0px
+            bottom 0px
+            left 0px
+            right 0px
+            opacity 0          
+    .issue-file-list
+      .issue-file-item
+        display flex
+        height 130px
+        padding 32px 0
+        box-sizing border-box
+        border-top $border-gray-color 1PX solid
+        .ext-thumb
+          width 66px
+          height 66px
+          background-size 100% 100%
+          background-position:  0 0
+          background-repeat: no-repeat
+          background-image url('~@/assets/images/public/default.png')
+        .doc,.docx
+          background-image url('~@/assets/images/public/word.png')
+        .jpg,.png,.gif,.bmp,.pic.tif
+          background-image url('~@/assets/images/public/img.png')
+        .rar,.zip,.arj
+          background-image url('~@/assets/images/public/zip.png')
+        .wav,.aif,.au,.mp3,.mp4,.mp5,.ram,.wma,.mmf,.amr,.aac,.flac
+          background-image url('~@/assets/images/public/wav.png')
+        .avi,.mpg,.mov,.swf
+          background-image url('~@/assets/images/public/mov.png')
+        .pdf
+          background-image url('~@/assets/images/public/pdf.png')
+        .ppt
+          background-image url('~@/assets/images/public/ppt.png')
+        .xls,.xlsx
+          background-image url('~@/assets/images/public/xls.png')
+        .meta
+          flex 1
+          margin-left 15px
+          overflow hidden
+          .f-name
+            font-size 28px
+            color #666666
+            text-overflow ellipsis
+            overflow hidden
+            white-space nowrap
+            line-height 38px
+          .f-size
+            height 24px
+            font-size 24px
+            font-weight 400
+            color:#B2B2B2
+            line-height 30px
+        .delete
+          width 66px
+          line-height 66px
+          text-align center
+          .iconfont
+            font-size 37px
+            color #979797
+          &:active
+            i
+              color lighten(#FF506B, 15%)
+    .issue-contacts,
+    .vote-add
+      line-height 110px
+      height 110px
+      border-top 1PX solid $border-gray-color
+      text-align left
+      position relative
+      & > span:first-child
+        font-size 30px
+        line-height 42px
+      & > span:last-child
+        font-size 28px
+        line-height 40px
+        float right
+        position absolute
+        right 0px
+        top 50%
+        color #666666
+        transform translateY(-50%)
+        i 
+          color #ABABAB
+          font-size 20px
+          margin-left 7px
+    .vote-container
+      border-top 1PX solid #E1E8EB
+      font-size 30px
+      .vote-list
+        display flex
+        margin-top 20px
+        & > input 
+          flex 1
+          margin-right 40px
+          padding 20px
+          background #F6F7F8
+          border-radius 4px
+          border none
+          font-size 28px
+        & > span 
+          flex none
+          line-height 80px
+          & > i 
+            font-size 40px
+            color #ff506b
+  .issue-actions
+    padding 39px 35px
+    .button
+      height 88px
+      background #007AFF
+      text-align center
+      line-height 88px
+      color #ffffff
+      font-size 30px
+      border-radius 4PX
+      font-weight 400
+      &.submit
+        background #007AFF
+        &:active
+          background darken(@background, 15%)

@@ -1,0 +1,89 @@
+.contacts-box
+  display flex
+  flex-direction column
+  box-sizing border-box
+  font-weight 400
+  position relative
+  height 100%
+  overflow hidden
+  background #F6F7F8
+  .person-details
+    position absolute
+    z-index 9
+    width 100px
+    height 100px
+    background linear-gradient(148deg, rgba(92, 163, 255, 1) 0%, rgba(0, 122, 255, 1) 100%)
+    box-shadow 3px 13px 15px 0px rgba(72, 134, 255, 0.36), 1px 3px 14px 0px rgba(72, 134, 255, 0.19)
+    border-radius 50px
+    bottom 28px
+    right 70px
+    line-height 100px
+    text-align center
+    .attendees
+      color #fff
+      font-size 40px
+    .person-num
+      position absolute
+      left 72px
+      top 0px
+      height 34px
+      border-radius 18px
+      border 2px solid #fff
+      color #fff
+      line-height 34px
+      font-size 22px
+      background-color #FF506B
+      padding 0 9px
+  .mask
+    position absolute
+    width 100%
+    height 100%
+    z-index 999
+    background rgba(0,0,0,0.5)
+    transition 0.3
+  .contacts-nav
+    margin-bottom 20px
+    height 203px
+    flex none
+    background-color #fff
+    display flex
+    justify-content space-around
+    box-sizing: border-box
+    padding 30px 0 0 0
+    border-bottom #F0F0F0 1px solid
+    .item
+      flex 1
+      text-align center
+      .image
+        margin 0 auto
+        width 96px
+        height 96px
+        background-position:  0 0
+        background-repeat: no-repeat
+        background-size 100% 100%
+        &.organization
+          background-image url('~@/assets/images/contacts/organization.png')
+        &.external
+          background-image url('~@/assets/images/contacts/external.png')
+        &.group
+          background-image url('~@/assets/images/contacts/group.png')
+      .title
+        margin-top 18px
+        font-size 28px
+        font-weight 400
+        color:#333333
+        height 28px
+        line-height 28px
+  .contacts-container
+    flex 1
+    padding 20px 0 20px 0
+    display flex
+    flex-direction column
+    overflow hidden
+    background #ffffff
+    .contacts-main
+      flex 1
+      display flex
+      flex-direction column
+      overflow hidden
+      position relative

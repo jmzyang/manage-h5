@@ -1,0 +1,162 @@
+.meeting-list-box
+  flex 1
+  display flex
+  flex-direction column
+  .nav
+    flex none
+    line-height 80px
+    text-align center
+    display flex
+    box-shadow 0PX 4PX 10PX 0PX #6478A00D
+    position relative
+    div
+      flex 1
+      color #666666
+      font-size 28px
+    .targetNav
+      color #333333
+      font-size 30px
+      p
+        height 5px
+        background-color #007AFF
+        width 45px
+        margin 0 auto
+  .empty
+    flex 1
+    text-align center
+    color #333333
+    font-size 42px
+    font-weight 400
+    position relative
+    .empty-container
+      height 50%
+      width 100%
+      text-align center
+      position absolute
+      top 40%
+      transform translateY(-50%)
+      img 
+        width auto
+        max-width 80%
+        height 70%
+      .empty-content
+        line-height 50px
+        height 100px
+        p
+          color #A9A9A9
+          font-size 32px
+          font-weight 400
+          margin-top 20px
+  .listContent
+    height 0px
+    flex 1
+    display flex
+    position relative
+    overflow hidden
+    flex-direction column
+    .scroll-content
+      flex 1
+      overflow hidden
+      .scroll-transform
+        // 不可以1PX，否则会报错
+        // OK,了解！
+        min-height calc(100% + 10px)
+      .yearList
+        p
+          padding 15px 0px
+          text-align center
+          background-color #F6F7F8
+          color #666666
+          font-size 35px
+        .dayList
+          border-bottom 1PX solid #F0F4F6
+          p
+            line-height 52px
+            margin 23px 0px
+            padding 0px 30px
+            background-color #F6F7F8
+            display inline-block
+            border-top-right-radius 50px
+            border-bottom-right-radius 50px
+            color #007AFF
+            font-size 26px
+          .listMain
+            height 233px
+            width 100%
+            padding 30px
+            padding-left 0px
+            border-top 1PX solid #F0F4F6
+            .mainHeader
+              overflow hidden
+              padding-left 30px
+              line-height 44px
+              position relative
+              i
+                padding 8px
+                background-color #007aff
+                border-radius 50%
+                position absolute
+                left 8px
+                top calc(50% - 8px)
+              .headerLeft
+                font-size 30px
+                font-weight 400
+                float left
+                span
+                  font-size 22px
+                  margin-left 15px
+              .headerRight
+                float right
+                line-height 38px
+                letter-spacing 1PX
+                padding 0px 12px
+                text-align center
+                color #007AFF
+                background-color #E7F2FF
+                border-radius 20px
+                font-size 22px
+                font-weight 500
+            .mainContent
+              padding 15px 0px 15px 30px
+              font-size 32px
+              font-weight 500
+              color #333333FF
+              letter-spacing 1PX
+              width 594px
+              text-overflow ellipsis
+              overflow hidden
+              white-space nowrap
+              position relative
+            .mainBottom
+              line-height 60px
+              font-size 26px
+              color #888888
+              padding-left 30px
+              span
+                display inline-block
+              .name
+                margin-right: 30px;
+              i
+                color #888888
+                font-size 25px
+                margin-right 10px
+                font-weight bold
+            .headerRed
+              color #FE5E57
+              .headerRight
+                color #FE5E57
+                background-color #FFF1F0
+            .headerGreen
+              .headerRight
+                color #1AB47F
+                background-color #EFF7EF
+            .headerGray
+              .headerRight
+                color #888888
+                background-color #F0F3F5
+            .headerYellow 
+              .headerRight
+                color #F0A046
+                background-color #FFF3E6
+          .sign
+            background-color #ECECEC

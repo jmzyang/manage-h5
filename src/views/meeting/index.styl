@@ -1,0 +1,65 @@
+.meeting-list
+  background #ffffff
+.meeting-list-container
+  flex 1
+  display flex
+  position relative
+  overflow hidden
+  flex-direction column
+  .meeting-bg 
+    flex 1
+    background-image url('~@/assets/images/meeting/icon_quesheng.png')
+    background-repeat no-repeat 
+    background-size 252px 247px
+    background-position center center
+  .meeting-des 
+    flex 1
+    align-items center
+    text-align center
+    color #222222
+    .des-title
+      font-size 46px
+      margin-bottom 20px
+    .des-normal
+      font-size 36px
+.submit-header-meeting-room
+    position absolute
+    top 14px
+    right 15px
+    width auto
+    display inline-block
+    padding 0 15px
+    height 60px
+    line-height 60px
+    font-size 30px
+    border none
+.all-meeting 
+    color #666666
+    font-size 32px
+    line-height 32px
+    text-align center
+    .arrow-right 
+      vertical-align top
+      padding-left 5px
+.commit-wrap
+    flex none
+    height 124px
+    box-sizing border-box
+    margin 40px 60px 30px
+    display flex
+    justify-content space-between
+    .btn
+        height 120px    
+        width 330px
+        text-align center
+        line-height 120px
+        border none
+        font-size 36px
+        border-radius 16px
+        width 262px
+        color white
+        border-radius 8px
+        &.immediately 
+          background linear-gradient(270deg,rgba(94,179,255,1) 0%,rgba(4,103,250,1) 99%)
+        &.reservation
+          background linear-gradient(-90deg,rgba(255,196,90,1) 0%,rgba(255,166,5,1) 99%)

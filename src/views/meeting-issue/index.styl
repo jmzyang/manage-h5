@@ -1,0 +1,144 @@
+.c-meeting-issue-container
+  flex 1
+  display flex
+  flex-direction column
+  position relative
+  color #333333
+  font-weight 400
+  .container-title
+    .icon-close
+      font-size 35px
+      position absolute
+      left 0px
+      color #007AFF
+  .meeting-issue-container
+    flex 1
+    margin 20px
+    background-color #FFFFFF
+    overflow hidden
+    display flex
+    flex-direction column
+    position relative
+    word-break break-all
+    .scroll-content
+      flex 1
+      overflow hidden
+      .meeting-issue-box
+        margin 40px
+        .issue-main
+          display flex
+          .issue-left
+            flex none
+            border-left 2PX solid #F4F7F9
+            margin 55px 35px 0px 20px 
+            position relative
+            .list-code
+              flex none
+              line-height 33px
+              height 33px
+              width 33px
+              text-align center
+              background-color #007AFF
+              border-radius 50%
+              color #FFFFFF
+              margin-right 15px
+              font-size 21px
+              font-weight 500
+              position absolute
+              top -50px
+              left -16px
+              &:after
+                content ""
+                position absolute
+                right -6px
+                top 15px
+                width 0
+                height 0
+                border-top 8px solid transparent
+                border-left 10px solid #007AFF
+                border-bottom 8px solid transparent
+                transform rotate(20deg)
+          .issue-right
+            flex 1
+            .title
+              font-size 30px
+              font-weight 500
+              line-height 42px
+              margin-bottom 50px
+            .file-list
+              background-color #F7FBFF
+              padding 20px
+              display flex
+              border-bottom 1PX solid #E1E8EB
+              &:last-child
+                border none
+              .img 
+                flex none
+                width 88px
+                height 88px
+                display inline-block
+                background url('~@/assets/images/public/txt.png') no-repeat center center
+                background-size 100% 100%
+              .doc,.DOC,.docx,.DOCX
+                background-image url('~@/assets/images/public/word.png')
+              .jpg,.JPG,.png,.PNG,.gif,.GIF,.bmp,.BMP,.pic,.PIC,.tif,.TIF
+                background-image url('~@/assets/images/public/img.png')
+              .rar,.RAR,.zip,.ZIP,.arj,.ARJ
+                background-image url('~@/assets/images/public/zip.png')
+              .wav,.WAV,.aif,.AIF,.au,.AU,.mp3,.MP3,.mp4,.MP4,.mp5,.MP5,.ram,.RAM,.wma,.WMA,.mmf,.MMF,.amr,.AMR,.aac,.AAC,.flac,.FLAC
+                background-image url('~@/assets/images/public/wav.png')
+              .avi,.AVI,.mpg,.MPG,.mov,.MOV,.swf,.SWF
+                background-image url('~@/assets/images/public/mov.png')
+              .pdf,.PDF
+                background-image url('~@/assets/images/public/pdf.png')
+              .ppt,.PPT
+                background-image url('~@/assets/images/public/ppt.png')
+              .xls,.XLS,.xlsx,.XLSX
+                background-image url('~@/assets/images/public/xls.png')
+              .losureContent
+                flex 1;
+                padding 6px 22px
+                & > p:first-child
+                  color #888888
+                  font-size 26px
+                  line-height 37px
+                & > p:last-child
+                  font-size 24px
+                  color #B2B2B2
+                  line-height 33px
+              .download
+                flex none
+                color #007AFF
+                font-size 26px
+                position relative
+                width 50px
+                i
+                  font-size 42px
+                  vertical-align sub
+                  margin-right 11px
+                  position absolute
+                  top 50%
+                  left 50%
+                  transform translate(-50%, -50%)
+            .attendee
+              color #666666
+              font-size 26px
+              line-height 36px
+              margin-top 25px
+        .issue-btn
+          text-align center
+          margin-top 60px
+          & > button
+            text-align center
+            width 180px
+            border 1PX solid rgba(0,122,255,1)
+            border-radius 30px
+            color #007AFF
+            font-size 26px
+            line-height 0px
+            height 60px
+            margin 0px 30px
+          .sendNotice
+            background-color #007AFF
+            color #FFFFFF
+            border none

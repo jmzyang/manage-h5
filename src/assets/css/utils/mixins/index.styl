@@ -1,0 +1,43 @@
+@require './x-mixins'
+
+//省略号
+ellipsis()
+  white-space nowrap
+  overflow hidden
+  -o-text-overflow ellipsis
+  -ms-text-overflow ellipsis
+  text-overflow ellipsis
+img-gray()
+  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+  filter: grayscale(100%);
+
+transition()
+  $param= unquote(join(',', arguments))
+  -webkit-transition $param
+  -moz-transition $param
+  -o-transition $param
+  -ms-transition $param
+  transition $param
+
+z-box-shadow()
+  $param= unquote(join(',', arguments))
+  -moz-box-shadow $param
+  -webkit-box-shadow $param
+  box-shadow $param
+
+//input 边框效果
+input-shadow($border_color= rgba(82, 168, 236, 0.8), $box_color= rgba(82, 168, 236, 0.6))
+  if $box_color == none
+    transition(none, none)
+    &:focus
+      border-color $border_color
+      outline none
+      z-box-shadow(none, none)
+  else
+    transition(border linear 0.3s, box-shadow linear 0.3s)
+    &:focus
+      border-color $border_color
+      outline 0
+      outline thin dotted \9
+      /* IE6-9 */
+      z-box-shadow(inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px $box_color)

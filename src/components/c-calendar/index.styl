@@ -1,0 +1,117 @@
+.calendar
+  display flex
+  height 573px
+  flex none
+  width 100%
+  flex-direction column
+  box-shadow 0 2PX 4PX 0 rgba(59, 79, 98, 0.04)
+  box-sizing border-box
+  overflow hidden
+  transition .5s;
+  &.c6
+    height 630px
+  &.c1
+    height 250px
+  .calendar-header
+    flex none
+    display flex
+    text-align center
+    height 108px
+    line-height @height
+    .calendar-week-label
+      flex 1
+      font-size 24px
+      color #666666
+      &.weekend
+        color #F7604C
+  .calendar-body
+    flex 1
+    overflow hidden
+    position relative
+    height 472px
+    .calendar-month
+      display block
+      height 64px
+      margin-top 37px
+      font-size 48px
+      color #ABB7C2
+  & > .calendar-grids
+    flex 1
+  .calendar-grids
+    .calendar-grid
+      margin-top 10px
+      box-sizing border-box
+      width 14.28%
+      height 66px
+      float left
+      text-align center
+      .calendar-day-wrap
+        width 64px
+        height 64px
+        display inline-block
+        font-size 26px
+        font-weight 600
+        color #3B4F62
+        text-align center
+        position relative
+        .calendar-day-has-meeting
+          position absolute
+          right 0
+          top 0
+          width 6PX
+          height 6PX
+          border-radius 50%
+          background lighten(#ff0000, 25%)
+        .ios-styl
+          width 10PX
+          height 10PX
+        &.calendar-grid-before
+          color #ABB7C2
+          .calendar-day-has-meeting
+            background lighten(#ff0000, 75%)
+        &.calendar-grid-disabled
+          color #ABB7C2
+        &.calendar-grid-range
+          background rgba(12, 192, 113, 0.15)
+          color #007AFF
+        &.calendar-grid-start, &.calendar-grid-end
+          background #007AFF
+          color #fff
+          .c-green
+            color #fff
+        &.calendar-grid-start
+          border-radius 6PX 0 0 6PX
+          &.unmultiple
+            .calendar-day
+              height 64px
+              line-height @height
+            .calendar-day-note
+              display none
+        &.calendar-grid-end
+          border-radius 0 6PX 6PX 0
+        &.unmultiple
+          border-radius 50%
+          .calendar-day
+            display inline-block
+            height 64px
+            line-height @height
+            text-align center
+        .calendar-day
+          height 40px
+          line-height @height
+          display block
+        .calendar-day-note
+          font-size 24px
+          height 30px
+          line-height @height
+          display block
+  .calendar-bottom
+    flex none
+    line-height 50px
+    text-align center
+    z-index 1
+    & > i 
+      font-size 32px
+  .calendar-choice
+    height 99px
+  // 日排列方式

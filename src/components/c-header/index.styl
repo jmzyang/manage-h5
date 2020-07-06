@@ -1,0 +1,139 @@
+.layout-header
+  flex none
+  height 88px
+  padding 13px 25px 13px 25px
+  background #f6f7f8
+  box-sizing border-box
+  display flex
+  z-index 1
+  position relative
+  &.border
+    border-bottom $border-gray-color 1PX solid
+  & > div
+    margin 0 6.5px
+  .return
+    height 62px
+    line-height @height
+    i
+      font-size 40px  
+  .title
+    flex 1
+    padding 0 15px
+    text-overflow ellipsis
+    white-space nowrap
+    text-align center
+    color #222222
+    font-size 36px
+    height 62px
+    font-weight 700
+    line-height @height
+    position relative
+    .icon-arrow-left
+      position absolute
+      left 0px
+      font-size 42px
+  .back,.close
+    position absolute
+    left 0
+    color #222222
+    font-size 30px
+    width 62px
+    height 62px
+    line-height 62px
+    text-align center
+  .close
+    left 62px
+  .scan,
+  .warn,
+  .calendar
+    flex none
+    width 62px
+    line-height 62px
+    margin-left 20px
+    margin 0
+    text-align center
+    position relative
+    .news
+      position absolute
+      top 9px
+      right -3px
+      font-size 22px
+      background-color #FE5E57
+      width: 32px
+      line-height 32px
+      border-radius 50%
+      color #fff
+  .calendar
+    margin-left 0px
+    margin-right 25px
+  .search
+    flex 1
+    .label
+      width 100%
+      height 62px
+      line-height: 62px
+      background #F6F7F8
+      border-radius 30px
+      color #333333
+      font-size: 28px
+      padding 0 30px
+      cursor text
+      &.placeholder
+        color #A9A9A9
+  .icon-scan,
+  .icon-info-warn,
+  .icon-calendar
+    font-size 38px
+    color #007AFF
+  .icon-info-warn
+    width 32px
+    height 41px
+  .icon-search
+    font-size 32px
+    vertical-align middle
+    margin-right 10px
+  &.blue
+    background #007AFF
+    .title, .back,.close
+      color #ffffff
+.search-topics
+  color #333333
+  font-size 36px
+  font-weight 500
+  line-height 60px
+  margin 0 42px !important
+.search-input
+  flex 1
+  line-height 1
+  padding 0 20px
+  background rgba(246,247,248,1)
+  border-radius 30px
+  cursor text
+  span 
+    vertical-align: middle;
+    color #A9A9A9
+    font-size 28px
+    font-weight 400
+  .icon-search
+    font-size 32px
+    color #A9A9A9
+    vertical-align  middle
+.search-btn
+  line-height 60px
+  font-size 30px
+  font-weight 500
+  color rgba(0,122,255,1)
+  margin 0 40px !important
+.meetingList
+  background-color #007AFF !important
+  i
+    color #FFFFFF !important
+  & > .search
+    & > .label
+      background-color rgba(0,0,0,0.1) !important
+      color #E6E6E6 !important
+      & > i
+        color #E6E6E6 !important
+
+
+  

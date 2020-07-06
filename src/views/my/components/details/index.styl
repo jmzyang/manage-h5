@@ -1,0 +1,96 @@
+.detailsSontent
+  flex 1
+  margin 20px 20px 0px 20px
+  background-color #FFFFFFFF
+  display flex
+  flex-direction column
+  .container
+    flex 1
+    padding 0 40px
+    overflow hidden
+  .control
+    flex none
+    padding 17px 41px
+    box-shadow 0PX -4PX 13PX 0PX #6478A014
+    display flex
+    background-color #FFFFFF
+    width 100%
+    button
+      flex 1
+      height 86px
+      line-height 86px
+      background-color #007AFFFF
+      font-size 30px
+      font-weight 400
+      color #FFFFFFFF
+      box-sizing border-box
+      border 1PX solid #007AFFFF
+      margin 10px
+    .undeterminedBtn,
+    .noJoinMeetingBtn
+      background-color #F5FAFF
+      color #007AFF
+      border 1PX solid #86C1FC
+    .noJoiningBtn
+      text-align center
+      color #ccc
+      height 86px
+      line-height 86px
+      flex 1
+      font-size 30px
+      font-weight 400
+      .van-icon 
+        vertical-align middle
+        margin-right 5px
+    .joiningBtn
+      text-align center
+      color #007AFFFF
+      height 86px
+      line-height 86px
+      flex 1
+      font-size 30px
+      font-weight 400
+      .van-icon 
+        vertical-align middle
+        margin-right 5px
+  .van-overlay, .van-popup, .van-actionsheet
+    position absolute
+  .van-popup
+    top 30%
+    border-radius 16px
+    .title
+      line-height 140px
+      font-size 36px
+      font-weight 500
+      color #000
+      text-align center
+    textarea
+      width 640px
+      height 348px
+      margin 0px 30px 60px 30px
+      font-size 32px
+      font-weight 400
+      color #666666
+      padding 30px
+      background-color #F6F7F8
+      resize none
+      border-radius 6px
+      border none
+    .btn
+      display flex
+      border-top 1PX solid #E1E8EB
+      & > div
+        flex none
+        width 1PX
+        height 67px
+        background rgba(225, 232, 235, 1)
+        margin-top 17px
+      button
+        flex 1
+        height 106px
+        text-align center
+        font-size 30px
+        font-weight 400
+        border none
+      & > button:last-child
+        color #007AFF

@@ -1,0 +1,51 @@
+.van-checkbox {
+  overflow: hidden;
+  user-select: none;
+}
+.van-checkbox__icon,
+.van-checkbox__label {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 32px;
+}
+.van-checkbox__icon {
+  height: 32px;
+}
+.van-checkbox__icon .van-icon {
+  font-size: 28px;
+  color: transparent;
+  text-align: center;
+  line-height: inherit;
+  width: 32px;
+  height: 32px;
+  box-sizing: border-box;
+  border: 1px solid #e5e5e5;
+  transition: 0.2s;
+}
+.van-checkbox__icon--round .van-icon {
+  border-radius: 3px;
+}
+.van-checkbox__icon--checked .van-icon {
+  color: #fff;
+  border-color: #007AFF;
+  background-color: #007AFF;
+}
+.van-checkbox__icon--disabled .van-icon {
+  border-color: #c8c9cc;
+  background-color: #ebedf0;
+}
+.van-checkbox__icon--disabled.van-checkbox__icon--checked .van-icon {
+  color: #c8c9cc;
+}
+.van-checkbox__label {
+  color: #323233;
+  margin-left: 20px;
+}
+.van-checkbox__label--left {
+  float: left;
+  margin: 0 20px 0 0;
+}
+.van-checkbox__label--disabled {
+  color: #c8c9cc;
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,149 @@
+.custom-group
+  display flex
+  flex 1
+  flex-direction column
+  box-sizing border-box
+  overflow hidden
+  font-weight 400
+  position relative
+  .search-group-mumber
+    position absolute
+    z-index 3
+    width 100%
+    height 100%
+    display flex
+    flex-direction column
+    overflow hidden
+  .select-custom-group-mumber
+    position absolute
+    z-index 2
+    background-color #F6F7F8
+    width 100%
+    height 100%
+    display flex
+    flex-direction column
+    overflow hidden
+    .select-custom-tab-con
+      flex 1
+      background-color #F6F7F8
+      overflow hidden
+    .tab
+      height 80px
+      flex none
+      background-color #fff
+      display flex
+      justify-content space-around
+      .tab-item
+        height 80px
+        line-height 80px
+        padding 0 46px
+        color #666666
+        font-size 28px
+        &.active
+          font-weight bold
+          color #333333
+          position relative
+          &:after
+            content ""
+            position absolute
+            width 40px
+            height 5px
+            background-color #007AFF
+            bottom 0
+            left 50%
+            margin-left -20px
+            border-radius 2px
+  .back,.sure
+    color #007AFF
+    font-size 32px
+    line-height 60px
+  .arrow-left
+    font-size 40px
+    vertical-align middle
+    padding-right 10px
+  .room-container
+    flex 1
+    padding 20px 20px 0 20px
+    display flex
+    overflow hidden
+    flex-direction column
+    .add-group-main
+      flex 1
+      background-color #fff
+      padding 0 38px
+      overflow hidden
+      .title
+        color #666666
+        font-size 28px
+        line-height 40px
+        padding-top 38px
+        padding-bottom 24px
+      &.imgtitle
+        padding-top 22px
+      span
+        padding-left 16px
+        font-size 30px
+      .con
+        background #F6F7F8
+        height 80px
+        width 100%
+        line-height 80px
+        border none
+        resize none
+        border-radius 3px
+        font-size 26px
+        padding 0 30px
+        margin-bottom 6px
+      .tips
+        line-height 22px
+        color #FF3030
+        font-size 22px
+        z-index 2
+        display block
+        height 22px
+      .imglist
+        display flex
+        padding-top 12px
+        padding-bottom 36px
+        box-sizing border-box
+        width 100%
+        align-content flex-start
+        flex-wrap wrap
+        .imgitem
+          position relative
+          height 70px
+          line-height 70px
+          min-width 180px
+          padding 0 46px
+          text-align center
+          margin-right 30px
+          background #F6F7F8
+          margin-bottom 30px
+          &:last-child
+            margin-right 0
+          .del
+            position absolute
+            font-size 28px
+            right -14px
+            top -14px
+            color #ADADAD
+            line-height 28px
+            height 28px
+            background #ffffff
+            border-radius 50%
+          &.addImg
+            line-height 70px
+            text-align center
+            background #F6F7F8
+            font-size 50px
+            color #000000
+            position relative
+            .crop-input
+              position absolute
+              width 100%
+              height 100%
+              border none
+              top 0
+              left 0
+              opacity 0
+              z-index 9

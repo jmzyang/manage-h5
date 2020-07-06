@@ -1,0 +1,185 @@
+.c-edit-issue-container
+  flex 1
+  display flex
+  flex-direction column
+  position relative
+  color #333333
+  font-weight 400
+  .container-title
+    span
+      color #007AFF
+      font-size 32px
+      font-weight 500
+      &:first-child
+        position absolute
+        left 0px
+        right auto
+      &:last-child
+        position absolute
+        right 0px
+        left auto
+  .personnel-details-box
+    flex 1
+    display flex
+    flex-direction column
+    .personnel-title
+      i
+        position absolute
+        left 0px
+        font-size 42px
+        color #007AFF
+      span
+        position absolute
+        right 0px
+        font-size 30px
+        color #007AFF
+  .personnel-title
+    i
+      position absolute
+      left 0px
+      font-size 42px
+      color #007AFF
+    span
+      position absolute
+      right 0px
+      font-size 30px
+      color #007AFF
+  .edit-issue-container
+    flex 1
+    margin 20px 0
+    overflow hidden
+    display flex
+    flex-direction column
+    position relative
+    word-break break-all
+    .scroll-content
+      flex 1
+      overflow hidden
+      .edit-issue-box
+        background-color #FFFFFF
+        padding 0px 35px
+        .title
+          font-size 30px
+          line-height 88px
+          margin 0px 15px
+        & > textarea
+          margin 15px 0
+          width 100%
+          height 165px
+          padding 20px
+          background #ffffff
+          border none
+          resize none
+          font-size 32px
+          line-height 48px
+        .issue-file-upload-button
+          padding 30px 0
+          line-height 38px
+          color #B2B2B2
+          text-align right
+          .upload-button
+            position relative
+            width 60px
+            display inline-block
+            vertical-align middle
+            overflow hidden
+            .iconfont
+              font-size 38px
+              color #007AFF
+            & > input
+                width 100%
+                height 100%
+                border none
+                position absolute
+                top 0px
+                bottom 0px
+                left 0px
+                right 0px
+                opacity 0          
+        .issue-file-list
+          .issue-file-item
+            display flex
+            .ext-image
+              width 66px
+              height 66px
+              .doc,.docx
+                background-image url('~@/assets/images/public/word.png')
+              .jpg,.png,.gif,.bmp,.pic.tif
+                background-image url('~@/assets/images/public/img.png')
+              .rar,.zip,.arj
+                background-image url('~@/assets/images/public/zip.png')
+              .wav,.aif,.au,.mp3,.mp4,.mp5,.ram,.wma,.mmf,.amr,.aac,.flac
+                background-image url('~@/assets/images/public/wav.png')
+              .avi,.mpg,.mov,.swf
+                background-image url('~@/assets/images/public/mov.png')
+              .pdf
+                background-image url('~@/assets/images/public/pdf.png')
+              .ppt
+                background-image url('~@/assets/images/public/ppt.png')
+              .xls,.xlsx
+                background-image url('~@/assets/images/public/xls.png')
+            .meta
+              flex 1
+              .title
+                font-size 22px
+                color #666666
+                text-overflow ellipsis
+                overflow hidden
+                white-space nowrap
+                line-height 2
+              .size
+                height 24px
+                font-size 24px
+                font-weight 400
+                color:#B2B2B2
+                line-height 36px
+            .delete
+              width 80px
+              text-align right
+              i
+                font-size 37px
+                color #979797
+              &:active
+                i
+                  color lighten(#FF506B, 15%)    
+              &.disable
+                i
+                  color #B2B2B2 
+        .issue-contacts
+          line-height 110px
+          height 110px
+          border-top 1PX solid #E1E8EB
+          text-align left
+          position relative
+          & > span:first-child
+            font-size 30px
+            line-height 42px
+          & > span:last-child
+            font-size 28px
+            line-height 40px
+            float right
+            position absolute
+            right 0px
+            top 50%
+            color #666666
+            transform translateY(-50%)
+            i 
+              color #ABABAB
+              font-size 20px
+              margin-left 7px
+      .issue-actions
+        padding 39px 35px
+        .button
+          height 88px
+          background #007AFF
+          text-align center
+          line-height 88px
+          color #ffffff
+          font-size 30px
+          border-radius 4PX
+          font-weight 400
+          &.submit
+            background #007AFF
+            margin-bottom 39px
+            &:active
+              background darken(@background, 15%)

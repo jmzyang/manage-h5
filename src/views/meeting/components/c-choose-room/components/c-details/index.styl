@@ -1,0 +1,98 @@
+.card-meeting-room-detail
+  position absolute
+  top 0
+  bottom 0
+  right 0
+  left 0
+  z-index 999
+  background-color rgba(0, 0, 0, 0.6)
+  display flex
+  justify-content center
+  align-items center
+  .con-wrap
+    position absolute
+    bottom 0
+    left 0
+    right 0
+    height 600px
+    background rgba(255, 255, 255, 1)
+    display flex
+    flex-direction column
+    .header
+      height 120px
+      flex none
+      h2
+        margin 0
+        padding 0
+        text-align center
+        font-size 36px
+        font-weight 600
+        color #000000
+        line-height 120px
+        padding 0 60px
+        white-space: nowrap
+        text-overflow: ellipsis
+        box-sizing: border-box
+        overflow hidden
+    .main
+      flex 1
+      margin 20px 36px
+      overflow-y auto
+      overflow-y hidden
+      box-sizing border-box
+      .van-collapse
+        .van-collapse-item
+          margin-bottom 21px
+          background #F6F7F8
+          border-radius 6PX
+          padding 0 30px
+        .van-collapse-item__content
+          background #F6F7F8
+        .van-cell
+          margin 0
+          padding 0
+          height 88px
+          color #333333
+          font-size 32px
+          line-height 88px
+          background #F6F7F8 !important
+      .detail
+        .item
+          font-size 28px
+          font-weight 400
+          color #333333
+          clear both
+          float none
+          .icon-wrap
+            position relative
+            float left
+            width 30px
+            margin-right 5PX
+            padding 8px 0
+            line-height 34px
+            .iconfont
+              font-size 28px
+              line-height 34px
+              color #333333
+          .text-wrap
+            overflow hidden
+            padding 8px 0
+            line-height 34px
+            white-space normal
+            word-break break-all
+          .gray
+            color #666666
+    .close
+      position absolute
+      width 50px
+      height 50px
+      line-height 50px
+      right 30px
+      top 30px
+      text-align center
+      &:active
+        background rgba(0, 0, 0, 0.15)
+      .iconfont
+        font-size 20px
+        line-height 50px
+        color #000000

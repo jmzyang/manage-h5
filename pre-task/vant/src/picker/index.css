@@ -1,0 +1,75 @@
+.van-picker {
+  overflow: hidden;
+  user-select: none;
+  position: relative;
+  background-color: #fff;
+  -webkit-text-size-adjust: 100%;
+  /* avoid iOS text size adjust */
+}
+.van-picker__toolbar {
+  display: flex;
+  height: 44px;
+  line-height: 44px;
+  justify-content: space-between;
+}
+.van-picker__cancel,
+.van-picker__confirm {
+  color: #007AFF;
+  padding: 0 15px;
+  font-size: 14px;
+}
+.van-picker__cancel:active,
+.van-picker__confirm:active {
+  background-color: #e8e8e8;
+}
+.van-picker__title {
+  max-width: 50%;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+.van-picker__columns {
+  display: flex;
+  position: relative;
+  min-height: 30vh!important;
+}
+.van-picker__loading {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.van-picker__loading circle {
+  stroke: #007AFF;
+}
+.van-picker__loading .van-loading,
+.van-picker__frame {
+  top: 50%;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+.van-picker-column {
+  flex: 1;
+  overflow: hidden;
+  font-size: 16px;
+  text-align: center;
+}
+.van-picker-column__item {
+  padding: 5px;
+  color: #969799;
+}
+.van-picker-column__item--selected {
+  font-weight: 500;
+  color: #323233;
+}
+.van-picker-column__item--disabled {
+  opacity: 0.3;
+}
+/*# sourceMappingURL=index.css.map */

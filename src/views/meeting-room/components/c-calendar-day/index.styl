@@ -1,0 +1,39 @@
+.meeting-room-calendar-day-scroll
+  width 100%
+  height 164px
+  overflow hidden
+  box-sizing border-box
+.meeting-room-calendar-day
+  position relative
+  height 164px
+  padding 22px 0
+  white-space nowrap
+  .item
+    display inline-block
+    width 170px
+    height 120px
+    background #FFFFFF
+    border-radius 6PX
+    padding 18px 0
+    overflow hidden
+    box-sizing border-box
+    text-align center
+    .week
+      width 100%
+      height 45px
+      font-size 32px
+      font-weight 500
+      color #555555
+      line-height 45px
+    .date
+      width 100%
+      height 33px
+      font-size 24px
+      font-weight 500
+      color #A9A9A9
+      line-height 33px
+    &.selected
+      background #007AFF
+      box-shadow 0px 10px 29px 0px rgba(0, 11, 255, 0.21)
+      .week, .date
+        color #FFFFFF

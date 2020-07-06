@@ -1,0 +1,173 @@
+.summary-container
+  flex 1
+  height 0px
+  display flex
+  flex-direction column
+  background #fff
+  .summary-box
+    padding-top 20px
+    background-color #F6F7F8
+    border-top 1PX solid #E1E8EB
+    position relative
+    overflow hidden
+    height 0px
+    .scroll-content
+      flex 1
+      overflow hidden
+      background-color #ffffff
+      .scroll-transform
+        min-height 100%
+        display flex
+        flex-direction column
+        .summary-box-head
+          background-color #ffffff
+          flex none
+          line-height 68px
+          padding 30px 35px
+          font-size 40px
+          letter-spacing 1PX
+          font-weight 500
+          color #2C73C0
+          border-bottom 1px dotted #cfcfcf
+        .summary-box-main
+          flex 1
+          background-color #FFFFFF
+          border-radius 6px
+          padding 40px 35px
+          font-size 26px
+          font-weight 400
+          .summary-box-main-read-only
+            .read-only-left
+              line-height 48px
+              font-size 32px
+              color #333
+              margin-bottom 25px
+            .read-only-right
+              line-height 42px
+              font-size 28px
+              color #888
+              margin-bottom 25px
+          .toggle 
+            text-align center
+            color #007AFF
+            margin 40px 0
+            span
+              padding 20px
+          .card-issue-wrap
+            .editable-title
+              line-height 56px
+              font-size 32px
+              color #333
+            .editable-list
+              margin 30px 0
+              .issue-main
+                display flex
+                padding 15px 0
+                .issue-left
+                  line-height 40px
+                  height 40px
+                  width 40px
+                  min-width 40px
+                  text-align center
+                  background-color #409eff
+                  border-radius 50%
+                  color #FFFFFF
+                  font-size 22px
+                  display inline-block
+                  position relative
+                  margin-right 15px
+                  &:after
+                    content ''
+                    position absolute
+                    right -5px
+                    top 5px
+                    width 0
+                    height 0
+                    border-top 20px solid transparent
+                    border-left 20px solid #409eff
+                    border-bottom 20px solid transparent
+                    -webkit-transform rotate(20deg)
+                    transform rotate(20deg)
+                .issue-center
+                  text-align left
+                  font-size 32px
+                  color #333
+                  line-height 40px
+                  flex 1
+                .toggle-icon
+                  width 30px
+                  height 30px
+                  color #000
+                .toggle-icon.show
+                  transform rotate(180deg)
+              .issues-info-wrap
+                margin-left 15px
+                padding 0 40px 0 35px
+                border-left 2px solid #F8F9FE
+                box-sizing border-box
+                .issue-man
+                  .item-tile
+                    font-size 28px
+                    line-height 38px
+                    color #666666
+                    margin-bottom 30px
+                .uploads
+                  .file-list
+                    margin-bottom 30px
+                    .is-success
+                      margin-bottom 8px
+                      background-color #EDEDEE
+                      display flex
+                      padding 17px 25px
+                      box-sizing border-box
+                      border-radius 10px
+                      .img
+                        flex none
+                        width 66px
+                        height 66px
+                        display inline-block
+                        margin-right 20px
+                        background url('~@/assets/images/public/zip.png') no-repeat center center
+                        background-size 100% 100%
+                      .doc, .DOC, .docx, .DOCX
+                        background-image url('~@/assets/images/public/word.png')
+                      .jpg, .JPG, .png, .PNG, .gif, .GIF, .bmp, .BMP, .pic, .PIC, .tif, .TIF
+                        background-image url('~@/assets/images/public/img.png')
+                      .rar, .RAR, .zip, .ZIP, .arj, .ARJ
+                        background-image url('~@/assets/images/public/zip.png')
+                      .mp3, .MP3
+                        background-image url('~@/assets/images/public/mp3.png')
+                      .mp4, .MP4 .avi
+                        background-image url('~@/assets/images/public/avi.png')
+                      .wav, .WAV, .aif, .AIF, .au, .AU, .mp5, .MP5, .ram, .RAM, .wma, .WMA, .mmf, .MMF, .amr, .AMR, .aac, .AAC, .flac, .FLAC
+                        background-imag url('~@/assets/images/public/wav.png')
+                      .AVI, .mpg, .MPG, .mov, .MOV, .swf, .SWF
+                        background-image url('~@/assets/images/public/mov.png')
+                      .pdf, .PDF
+                        background-image url('~@/assets/images/public/pdf.png')
+                      .ppt, .pptx, .PPT
+                        background-image url('~@/assets/images/public/ppt.png')
+                      .xls, .XLS, .xlsx, .XLSX
+                        background-image url('~@/assets/images/public/xls.png')
+                      .file-item
+                        flex 1
+                        overflow hidden
+                        .name
+                          font-size 26px
+                          line-height 38px
+                          color #666666
+                          margin-bottom 4px
+                          overflow hidden
+                          text-overflow ellipsis
+                          white-space nowrap
+                        .size
+                          font-size 24px
+                          color #B2B2B2
+                          line-height 32px
+                      .iconfont
+                        color #409eff
+                        cursor pointer
+                        font-size 42px
+                        margin auto
+
+

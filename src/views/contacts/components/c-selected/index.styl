@@ -1,0 +1,103 @@
+.selected-users-fixed
+  position absolute
+  top 0px
+  left 0px
+  right 0px
+  bottom 0px
+  background-color rgba(0, 0, 0, 0)
+  z-index 999
+  .selected-users-wrap
+    position absolute
+    bottom 0
+    width 100%
+    background-color #ffffff
+    height 100%
+    display flex
+    flex-direction column
+    box-shadow 0 -10PX 20PX rgba(0, 0, 0, 0.35)
+    .content-wrap
+      flex 1
+      overflow-y auto
+      .content
+        padding 0
+        &:after
+          content ''
+          display block
+          clear both
+        .selected-list
+          .selected-item
+            height 110px
+            box-sizing border-box
+            line-height 110px
+            display flex
+            border-bottom $border-gray-color 1PX solid
+            padding 0 20px
+            // 组织机构
+            .org-name
+              flex 1
+              font-size 32px
+              font-weight 400
+              color #303030
+              .count
+                font-weight 400
+                color #888
+            // 联系人
+            .avatar
+              flex none
+              width 72px
+              height 72px
+              border-radius 50%
+              margin-top: 17px
+              margin-right 35px
+              background #3296FB
+              text-align center
+              font-size 28px
+              line-height 72px
+              color #ffffff
+              overflow hidden
+              img
+                width 72px
+                height 72px
+                border-radius 50%
+            .name
+              flex 1
+              margin-top: 17px
+              font-weight 400
+              color #007AFF
+              font-size 32px
+              h2
+                margin 0
+                padding 0
+                height 42px
+                font-size 30px
+                font-weight 400
+                color #333333
+                line-height 42px
+              p
+                height 33px
+                font-size 24px
+                font-weight 400
+                color #B2B2B2
+                line-height 33px
+            .selected-delete
+              width 80px
+              text-align right
+              i
+                font-size 37px
+                color #979797
+              &:active
+                i
+                  color lighten(#FF506B, 15%)    
+              &.disable
+                i
+                  color #B2B2B2 
+    .submit-header
+      position absolute
+      right 0
+      top 0
+      display inline-block
+      height 62px
+      line-height 62px
+      font-size 34px
+      font-weight 400
+      color #007aff

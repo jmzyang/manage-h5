@@ -1,0 +1,122 @@
+.detailsSontent
+  height calc(100% - 108px)
+  margin 20px 20px 0px 20px
+  background-color #FFFFFFFF
+  display flex
+  flex-direction column
+  position relative
+  overflow hidden
+  .scroll-content
+    flex 1
+    overflow hidden
+    .container
+      flex 1
+      padding 0 40px
+      display flex
+      flex-direction column
+      overflow hidden
+      .header
+        border-bottom 2PX solid #F0F4F6FF
+        .title
+          line-height 72px
+          letter-spacing 1PX
+          font-size 36px
+          font-weight 500
+          margin-top 34px
+        .dateTime
+          font-size 28px
+          line-height 34px
+          span 
+            margin-right 15px
+          .timeSlot
+            font-size 20px
+            color #666666FF
+        .Convenor
+          height 50px
+          margin-top 20px
+          margin-bottom 30px
+          font-weight 400
+          font-size 26px
+          color #666666FF
+          img 
+            width 50px
+            height 50px
+            border-radius 50%
+            vertical-align middle
+            margin-right 10px
+      .content
+        flex 1
+        padding 50px 0px
+        .Subheading
+          font-size 28px
+          font-weight 500
+          color #333333
+          line-height 72px
+        .SubheadingContent
+          font-size 26px
+          font-weight 400
+          color #666666
+          line-height 40px
+          .topicsContent
+            padding 23px 30px
+            background-color #F6F7F8FF
+            border-radius 3px
+            font-size 26px
+            font-weight 400
+            color #333333FF
+            margin 16px 0px
+            letter-spacing 1px
+            word-break break-all
+            .losure
+              margin-top 42px
+              display flex
+              line-height 88px
+              img 
+                width 88px
+                height 88px
+              .losureContent
+                flex 1;
+                padding 0px 22px
+                line-height 44px
+                & > p:first-child
+                  font-weight 500
+                  color #333333FF
+                & > p:last-child
+                  font-size 24px
+                  font-weight 400
+                  color #888888FF
+              .download
+                color #007AFFFF
+                font-size 28px
+                font-weight 400
+                i
+                  font-size 42px
+                  vertical-align sub
+                  margin-right 11px
+        & > div
+          display flex
+          margin-bottom 41px
+          .icons
+            width 28px
+            line-height 72px
+            margin-right 17px
+            i
+              font-size 28px
+          .roomData
+            flex 1
+  .control
+    height 120px
+    padding 17px 41px
+    box-shadow 0PX -4PX 13PX 0PX #6478A014
+    display flex
+    background-color #FFFFFF
+    button
+      flex 1
+      background-color #FFF1F0FF
+      font-size 30px
+      font-weight 400
+      color #FE5E57FF
+      &:last-child
+        background-color #007AFFFF
+        margin-left 20px
+        color #FFFFFFFF

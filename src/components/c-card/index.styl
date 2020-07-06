@@ -1,0 +1,45 @@
+.fixed-card
+  position fixed
+  top 0
+  bottom 0
+  right 0
+  left 0
+  z-index 3000
+  background rgba(0, 0, 0, 0)
+  .card-wrap
+    position absolute
+    width 80%
+    right 0
+    top 0
+    bottom 0
+    z-index 11
+    background rgba(255, 255, 255, 1)
+    box-shadow -8px 0px 10px rgba(0, 0, 0, 0.2)
+    display flex
+    flex-direction column
+    .header
+      flex none
+      color #2a2a2a
+      font-size 16px
+      text-align left
+      height 46px
+      line-height 46px
+      display block
+      padding 0 15px
+      font-weight 700
+      border-bottom 1PX solid #e8e9eb
+      span.action
+        font-weight 400
+        font-size 12px
+        margin-left 10px
+        color #409eff
+        cursor pointer
+    .main
+      padding 15px 0
+      flex 1
+      overflow-y scroll
+    .footer
+      flex none
+      background #f2f2f2
+      padding 10px 0
+      border-top 1PX solid #d9d9d9

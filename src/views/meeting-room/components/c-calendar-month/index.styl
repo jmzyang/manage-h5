@@ -1,0 +1,26 @@
+.meeting-room-calendar-month-fixed
+  position fixed
+  top 0
+  bottom 0
+  right 0
+  left 0
+  z-index 3000
+  background transparent
+  .meeting-room-calendar-month-card
+    position absolute
+    width 760px
+    background #ffffff
+    background rgba(255, 255, 255, 1)
+    box-shadow 0px -3px 16px 0px rgba(0, 0, 0, 0.15)
+    border-radius 6PX
+    &:before
+      content ''
+      width 0
+      border-right 20PX solid transparent
+      border-left 20PX solid transparent
+      border-bottom 20PX solid #ffffff
+      position absolute
+      top -3PX
+      left calc(90% - 20px)
+.meeting-room-calendar-month
+  width 760px

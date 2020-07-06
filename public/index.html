@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <!-- 防贴广告 -->
+  <meta http-equiv='Cache-Control' content='no-siteapp' />
+	<meta name='renderer' , content='webkit' />
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <!-- <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" /> -->
+  <!-- <meta name='viewport' content='width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui'/> -->
+  <meta name='apple-mobile-web-app-capable' , content='yes' />
+  <meta name='apple-mobile-web-app-status-bar-style' content='black' />
+  <meta name='apple-touch-fullscreen' , content='yes' />
+  <!-- <meta(name='format-detection' content='telephone=no,email=no'/> -->
+  <!-- UC默认竖屏 ，UC强制全屏 -->
+  <!-- <meta name='full-screen' content='yes' ) />
+  <meta name='browsermode' content='application' /> -->
+  <!-- QQ强制竖屏 QQ强制全屏 -->
+  <!-- <meta name='x5-orientation' content='portrait' />
+  <meta name='x5-fullscreen' content='true' />
+  <meta name='x5-page-mode' content='app' />
+  <meta name='App-Config' content='fullscreen=yes,useHistoryState=yes,transition=yes' /> -->
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <script src="https://open.welink.huaweicloud.com/wecode/docs/jsapi/2.0.0/hwh5-cloudonline.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <!-- wx js-sdk -->
+  <script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js?v=1.2"></script>
+  <!-- <script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script> -->
+   <!-- 虚拟调试器 -->
+  <!-- <script src="https://wechatfe.github.io/vconsole/lib/vconsole.min.js?v=3.2.0"></script>
+  <script>
+    window.vConsole = new window.VConsole();
+  </script> -->
+  <title>星智云会管系统</title>
+  <script>
+    // 解决单页应用后退缓存问题
+    function pageshow(event) {
+      var dom = document.getElementById('pageCacheInput'),
+        ua = navigator.userAgent
+      if (ua.toLowerCase().indexOf('android') != -1) {
+        return
+      }
+      //event.persisted 好像部分IOS不管用，一直是false
+      if (event.persisted || (dom && dom.value == 1)) {
+        location.reload(true)
+      } else {
+        dom.value = 1
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <input type="hidden" id="pageCacheInput" />
+  <noscript>
+    <strong>We're sorry but manage-vue doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+
+</html>

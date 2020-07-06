@@ -1,0 +1,91 @@
+@import '../style/var';
+
+.van-dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 85%;
+  font-size: 30px;
+  overflow: hidden;
+  transition: .3s;
+  border-radius: 6PX;
+  background-color: @white;
+  transform: translate3d(-50%, -50%, 0);
+  backface-visibility: hidden; // avoid blurry text after scale animation
+
+  &__header {
+    font-weight: 500;
+    padding-top: 44px;
+    text-align: center;
+
+    &--isolated {
+      padding: 34px 0;
+    }
+  }
+
+  &__message {
+    padding: 34px;
+    font-size: 28px;
+    line-height: 1.5;
+    max-height: 60vh;
+    overflow-y: auto;
+    text-align: center;
+    -webkit-overflow-scrolling: touch;
+
+    &--has-title {
+      padding-top: 20px;
+      color: @gray-darker;
+    }
+
+    &--left {
+      text-align: left;
+    }
+
+    &--right {
+      text-align: right;
+    }
+  }
+
+  &__footer {
+    overflow: hidden;
+    user-select: none;
+    border-top: 1PX solid #ebedf0;
+
+    &--buttons {
+      display: flex;
+
+      .van-button {
+        flex: 1;
+        border-left: none;
+        border-width: 0 0 0 1PX;
+        &:last-child {
+          border-width: 0 0 0 0
+        }
+      }
+    }
+  }
+
+  .van-button {
+    font-size: 35px;
+    line-height: 98px;
+    height: 98px;
+    border-radius: 0;
+  }
+
+  &__confirm {
+    &,
+    &:active {
+      color: @blue;
+    }
+  }
+
+  &-bounce-enter {
+    opacity: 0;
+    transform: translate3d(-50%, -50%, 0) scale(0.7);
+  }
+
+  &-bounce-leave-active {
+    opacity: 0;
+    transform: translate3d(-50%, -50%, 0) scale(0.9);
+  }
+}

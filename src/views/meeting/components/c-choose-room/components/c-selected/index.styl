@@ -1,0 +1,124 @@
+.selected-box
+  position absolute
+  top 0px
+  left 0px
+  right 0px
+  bottom 0px
+  background-color rgba(0, 0, 0, .5)
+  z-index 999
+  .selected-container
+    position absolute
+    right 0px
+    left 0px
+    bottom 0px
+    height 75%
+    background-color #FFFFFF
+    display flex
+    flex-direction column
+    .selected-header
+      position relative
+      flex none
+      line-height 100px
+      background-color #ffffff
+      font-size 36px
+      font-weight 500
+      color #000000
+      display flex
+      text-align center
+      .header-content
+        flex 1
+        padding 0 35px
+        span
+          color #007AFF
+      .close
+        position absolute
+        top 10px
+        right 35px
+        height 80px
+        width 80px
+        line-height 80px
+        text-align right
+        .iconfont
+          color #000000
+          font-size 35px
+    .selected-main
+      flex 1
+      padding 0
+      overflow hidden
+      overflow-y auto
+      .selected-list
+        margin 0 35px
+        line-height 88px
+        border-bottom 1PX solid $border-gray-color
+        display flex
+        .selected-name
+          flex 1
+          overflow hidden
+          text-overflow ellipsis
+          white-space nowrap
+          font-size 28px
+          font-weight 400
+          color #666666 
+        .selected-number
+          flex 1
+        .selected-equipment
+          flex 1
+          display flex
+          align-items center
+          .equipment
+            flex 1
+            margin-right 12px
+            overflow hidden
+            white-space nowrap
+            text-overflow ellipsis
+            // &.bazhuayu
+            //   background url('~@/assets/images/meeting/bazhuayu-gray.png') no-repeat
+            //   background-size cover
+            // &.touying
+            //   background url('~@/assets/images/meeting/touying-gray.png') no-repeat
+            //   background-size cover
+            // &.shipin
+            //   background url('~@/assets/images/meeting/shipin-gray.png') no-repeat
+            //   background-size cover
+            // &.baiban
+            //   background url('~@/assets/images/meeting/baiban-gray.png') no-repeat
+            //   background-size cover
+            // &.dianhua
+            //   background url('~@/assets/images/meeting/dianhua-gray.png') no-repeat
+            //   background-size cover
+        .selected-delete
+          width 88px
+          height 88px
+          line-height 88px
+          text-align right
+          i
+            font-size 30px
+            color #979797
+          &:active
+            i
+              color lighten(#FF506B, 15%)
+    .selected-actions
+      padding 20px 20px
+      height 120px
+      background #ffffff
+      box-shadow 0 -4px 13px 0 rgba(100, 120, 160, 0.08)
+      display flex
+      button
+        flex 1
+        height 80px
+        background #ffffff
+        border-radius 4PX
+        border 1PX solid #86C1FC
+        margin 0 15px
+        font-size 30px
+        font-weight 500
+        &.clear          
+          color #007AFF
+          background #F5FAFF
+          border 1PX solid #86C1FC
+        &.submit
+          color #ffffff
+          background #007AFF
+          border 1PX solid #86C1FC
+          &:active
+            background #efefef

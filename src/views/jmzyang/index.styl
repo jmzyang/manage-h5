@@ -1,0 +1,42 @@
+.enter-box
+    margin-top 50px
+    border 1px solid #efefef
+    flex 1
+    overflow-y auto
+    .enter-title
+        font-size 38px
+        color #222222
+        text-align center
+    .enter-input
+        background-color transparent
+        margin-top .3rem
+        padding .3rem 1rem
+        .van-field 
+            border 3px solid #efefef
+            border-radius .2rem
+            font-size 46px
+            /deep/.van-field__control
+                letter-spacing 30px
+                text-align center
+.commit-wrap
+    flex none
+    height 224px
+    padding 20px 200px
+    box-sizing border-box
+    display flex
+    button
+        height 80px    
+        text-align center
+        line-height 80px
+        color #ffffff
+        border none
+        font-size 32px
+        border-radius 8px
+        &.reset
+            flex 1
+            border-radius 16px
+            width 320px
+            color white
+            background-color #87BEFA
+            &.active
+                background rgba(38,136,243,1);

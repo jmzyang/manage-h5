@@ -1,0 +1,28 @@
+'use strict'
+export const M_CONTACTS_ENTERPRISE = 'M_CONTACTS_ENTERPRISE' // 企业内部联系人
+
+export const M_IS_LOADING_ORGANIZATION = 'M_IS_LOADING_ORGANIZATION' // 组织机构是否正在加载
+
+// 主持人
+export const M_CONVENOR = 'M_CONVENOR'
+export const M_CONVENOR_EDIT = 'M_CONVENOR_EDIT'
+
+// 参会人
+export const M_PARTICIPANTS = 'M_PARTICIPANTS'
+export const M_PARTICIPANTS_EDIT = 'M_PARTICIPANTS_EDIT'
+
+// 参会领导
+export const M_PARTICIPANTS_LEADER = 'M_PARTICIPANTS_LEADER'
+export const M_PARTICIPANTS_LEADER_EDIT = 'M_PARTICIPANTS_LEADER_EDIT'
+
+// 组员
+export const M_CUSTOM_GROUP_MEMBER = 'M_CUSTOM_GROUP_MEMBER'
+
+// 授权人
+export const M_AUTHORIZER = 'M_AUTHORIZER'
+
+// 议题参会人
+export const M_PARTICIPANTS_ISSUE = 'M_PARTICIPANTS_ISSUE'
+
+// 添加自定义组人员
+export const M_CUSTOM_GROUP = 'M_CUSTOM_GROUP'

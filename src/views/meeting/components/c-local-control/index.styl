@@ -1,0 +1,179 @@
+.control-container
+  flex 1
+  display flex
+  flex-direction column
+  .personnel-details-box
+    flex 1
+    display flex
+    flex-direction column
+  .personnel-title,
+  .container-title
+    & > span
+      color #007AFF
+      cursor pointer
+      position absolute
+      left 0px
+      right auto
+      i 
+        font-size 32px
+    & > span:last-child
+      left auto
+      right 0px
+  .control-box
+    flex 1
+    display flex
+    flex-direction column
+    border-top 1PX solid #E1E8EB
+    position relative
+    overflow hidden
+    height 0px
+    .scroll-content
+      flex 1
+      overflow hidden
+      .control-main
+        .main-content-box
+          margin-bottom 14px
+          padding 40px 37px
+          margin 20px 20px 0px 20px
+          background-color #FFFFFF
+          .title
+            line-height 72px
+            letter-spacing 1PX
+            font-size 36px
+            font-weight 600
+          .date-time
+            font-size 30px
+            line-height 34px
+            span 
+              margin-right 15px
+            .timeSlot
+              font-size 20px
+              color #666666FF
+          .control-time
+            line-height 72px
+            font-size 30px
+            position relative
+            & > span
+              color #FE5E57
+            & > .extend-box > button
+              height 56px
+              line-height 56px
+              width 160px
+              padding 0px
+              background-color #007AFF
+              color #FFFFFF
+              margin-left 33px
+              border-radius 3px
+              span
+                font-size 28px
+            .extend-box
+              position relative
+              display inline-block
+              .meeting-extend
+                position absolute
+                top 120px
+                right -310px
+                width 740px
+                background rgba(255,255,255,1)
+                box-shadow 0px -3px 16px 0px rgba(0,0,0,0.15)
+                border-radius 6px
+                display flex
+                flex-direction column
+                z-index 9
+                &:before
+                  content ''
+                  width 0
+                  border-top 20px solid #fff0
+                  border-bottom 20px solid #fff
+                  border-left 20px solid #fff0
+                  border-right 20px solid #fff0
+                  position absolute
+                  top -40px
+                  left calc(50% - 10px)
+                .canExtendTips
+                  background-color #FFF2D2
+                  border-radius 5px
+                  margin 40px
+                  margin-bottom 0px
+                  padding 20px
+                  font-size 30px
+                  text-align left
+                  & > span
+                    color #FE655C
+                  & > span:last-child
+                    color #60ADF8
+                    cursor pointer
+                .selection-extend
+                  flex 1
+                  padding 0px 10px 36px 36px
+                  text-align center
+                  & > button,
+                  & > input
+                    width 205px
+                    height 70px
+                    line-height 70px
+                    font-size 28px
+                    font-weight 400
+                    margin-right 26px
+                    margin-top 30px
+                    border none
+                    background rgba(246,247,248,1)
+                    border-radius 3px
+                    text-align center
+                  .btnSelection
+                    background rgba(231,242,255,1)
+                    color rgba(0,122,255,1)
+                  .btnProhibit
+                    color #b2b2b2
+                  & > input
+                    padding 0px 20px
+                .operation-extend
+                  border-top 1PX solid #E1E8EB
+                  display flex
+                  & > button
+                    flex 1
+                    border none
+                    height 100px
+                    line-height 100px
+                    font-size 30px
+                    font-weight 400
+                  & > button:last-child
+                    color #007AFF
+                    border-left 1PX solid #E1E8EB
+          .control-attendee
+            display flex
+            line-height 39px
+            & > span
+              flex none
+            & > div
+              flex 1
+              & > span
+                color #007aff
+                float right
+        .main-issue-box
+          margin-bottom 16px
+    & > .control-btn,
+    & > .issue-btn
+      flex none
+      padding 17px 41px
+      box-shadow 0px -4px 13px 0px rgba(100,120,160,0.08)
+      display flex
+      background-color #FFFFFF
+      & > button
+        flex 1
+        height 86px
+        line-height 86px
+        font-size 30px
+        font-weight 400
+        border none
+        background-color #007AFFFF
+        color #FFFFFFFF
+      .endMeetingBtn
+        background-color #FFF1F0FF
+        color #FE5E57FF
+        margin-right 20px
+      .cancelMeetingBtn
+        background-color #F0F0F7
+        margin-right 20px
+        color #007AFF
+      

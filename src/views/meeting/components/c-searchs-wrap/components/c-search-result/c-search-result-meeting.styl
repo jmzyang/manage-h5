@@ -1,0 +1,146 @@
+.searchs-content
+	display flex
+	flex 1
+	flex-direction column
+	overflow hidden
+	background-color #FFFFFF
+	.header
+		padding 40px 30px 30px 30px
+		display flex
+		flex none
+		box-shadow 0PX 4PX 10PX 0PX #6478A00D
+		overflow hidden
+		position relative
+		.back
+			flex none
+			color #007AFF
+			font-size 32px
+			line-height 60px
+			padding-right 30px
+			box-sizing border-box
+			.arrow-left
+				font-size 40px
+				vertical-align middle
+				padding-right 10px
+		.icons
+			flex none
+			margin-right 30px
+			float right 
+			line-height 60px
+			padding-left 15px
+			font-weight 500
+			font-size 30px
+			color #007AFF
+			box-sizing border-box
+		.input-content
+			flex 1
+			height 62px
+			line-height 62px
+			background #F6F7F8
+			border-radius 30px
+			color #A9A9A9
+			font-size 28px
+			padding 0 15px
+			cursor text
+			display flex
+			box-sizing border-box
+			.icon-search
+				font-size 32px
+				vertical-align middle
+				margin-right 10px
+			input
+				flex 1
+				border none
+				background #F6F7F8
+				line-height 1
+	.room-card-scroll
+		flex 1
+		overflow hidden
+		.room-card-container
+			width 100%
+			padding 10px 10px
+			box-sizing: border-box
+			.room-card
+				position: relative
+				display 100%
+				height 120px
+				line-height 45px
+				border 1PX solid #E1E8EB
+				border-radius 6px
+				margin 25px 10px
+				padding 15px 20px
+				display flex
+				flex-direction column
+				.item-header
+					flex 1
+					display flex
+					.nanme
+						color #333333
+						font-size 28px
+						flex 1
+						overflow hidden
+						text-overflow ellipsis
+						white-space nowrap
+					.number
+						color #666666
+						font-size 24px
+						margin-left 10px
+				.item-meta
+					flex 1
+					display flex
+					.equipment
+						flex 1
+						height 30px
+						margin-right 12px
+				.status
+					position absolute
+					width 40px
+					bottom 15px
+					right 15px
+					.iconfont
+						font-size 20px
+						color #007AFF
+				.actions-detail
+					position absolute
+					bottom 15px
+					right 15px
+					span
+						background-color #FE5E57
+						border-radius 3px
+						font-size 24px
+						color #FFFFFF
+						font-weight 500
+						padding 6px 14px
+				&.selected
+					color #007AFF
+					border-color #007AFF
+					background-color #E7F2FF
+					.nanme
+						color @color 
+					.number
+						color @color
+				&.can-not
+					background #E6E6E6
+					border-color #E6E6E6
+					color #666666
+					background-color #E7F2FF
+					.nanme
+						color @color
+					.number
+						color @color              
+				&.used
+					color #FF9DAC
+					border-color #FF9DAC
+					background-color #FFF4F3
+					.nanme
+						color @color
+					.number
+						color @color
+				&.lock
+					color #AB82FF
+					border-color #AB82FF
+					background-color #FFFAFA
+					.nanme
+						color @color
+					.number
+						color @color

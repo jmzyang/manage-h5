@@ -1,0 +1,52 @@
+.van-pagination {
+  display: flex;
+  text-align: center;
+  line-height: 40px;
+  font-size: 14px;
+}
+.van-pagination__item {
+  flex: 1;
+  color: #007AFF;
+  height: 40px;
+  min-width: 36px;
+  background-color: #fff;
+  box-sizing: border-box;
+  user-select: none;
+}
+.van-pagination__item:active {
+  color: #fff;
+  background-color: #007AFF;
+}
+.van-pagination__item::after {
+  border-width: 1px 0 1px 1px;
+}
+.van-pagination__item:last-child::after {
+  border-right-width: 1px;
+}
+.van-pagination__item--disabled,
+.van-pagination__item--disabled:active {
+  background-color: #f8f8f8;
+  color: #7d7e80;
+  opacity: 0.6;
+}
+.van-pagination__item--active {
+  color: #fff;
+  background-color: #007AFF;
+}
+.van-pagination__prev,
+.van-pagination__next {
+  padding: 0 5px;
+}
+.van-pagination__page {
+  flex-grow: 0;
+}
+.van-pagination__page-desc {
+  flex: 1;
+  height: 40px;
+  color: #7d7e80;
+}
+.van-pagination--simple .van-pagination__prev::after,
+.van-pagination--simple .van-pagination__next::after {
+  border-width: 1px;
+}
+/*# sourceMappingURL=index.css.map */

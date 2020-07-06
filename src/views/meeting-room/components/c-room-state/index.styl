@@ -1,0 +1,183 @@
+.room-state-box
+  flex 1
+  display flex
+  flex-direction column
+  position relative
+  .container-title
+    & > span
+      color #007AFF
+      position absolute
+      left 0px
+      font-size 32px
+      i
+        font-size 42px
+        vertical-align middle
+        margin-right 6px
+  .page-meeting-room-r
+    flex 1
+    overflow-y auto
+    margin 0
+    background #ffffff
+    box-sizing border-box
+    padding 0 37px
+    // 选中的会场
+    .box-selected-rooms
+      padding 40px 0 0 0
+      border-bottom 1PX #DDE4E8 solid
+      .no-data
+        text-align center
+        margin-bottom 40px
+        font-size 28px
+      .item
+        position relative
+        display inline-block
+        margin 0 30px 30px 0
+        padding 0 39px
+        height 70px
+        font-size 28px
+        font-weight 400
+        color #333333
+        line-height 70px
+        background #F6F7F8
+        border-radius 3PX
+        white-space nowrap
+        word-break break-all
+        .delete
+          position absolute
+          top -10px
+          right -10px
+          width 30px
+          height 30px
+          line-height 30px
+          border-radius 50%
+          font-size 30px
+          color #c8c9cb
+          .iconfont
+            font-size @font-size
+    // 周日历
+    .box-calendar
+      .header
+        padding 25px 0
+        height 95px
+        box-sizing border-box
+        overflow hidden
+        h2
+          width auto
+          float left
+          width 128px
+          height 45px
+          font-size 32px
+          font-weight 500
+          color #333333
+          line-height 45px
+        .r
+          float right
+          .ele-month
+            display inline-block
+            padding 0 20px
+            height 45px
+            font-size 28px
+            font-weight 400
+            color #007AFF
+            line-height 45px
+            white-space nowrap
+            .iconfont
+              display inline-block
+              line-height 45px
+              margin-left 10px
+      .main
+        width 100%
+        height 164px
+        overflow hidden
+        position relative
+    .bar-status-color
+      margin 24px 0
+      .item
+        position relative
+        display inline-block
+        margin-right 40px
+        padding 0 0 0 40px
+        height 32px
+        font-size 28px
+        font-weight 400
+        color #888888
+        line-height 32px
+        &:before
+          position absolute
+          left 0
+          top 3px
+          width 24px
+          height 24px
+          content ''
+          border-radius 2PX
+        &.expired
+          &:before
+            background #E6E6E6
+        &.can-use
+          &:before
+            background #FFFFFF
+            border 1PX solid #DDE4E8
+        &.used
+          &:before
+            background #FF506B
+        &.selected
+          &:before
+            background #007AFF
+    // 状态详细
+    .box-status-time
+      display flex
+      justify-content space-between
+      flex-wrap wrap
+      .item
+        flex none
+        margin-bottom 24px
+        width calc(33.3% - 20px)
+        position relative
+        display block
+        height 80px
+        line-height 80px
+        text-align center
+        background #E6E6E6
+        border-radius 4PX
+        border-style solid
+        border-width 1PX
+        border-color #E6E6E6
+        box-sizing border-box
+        overflow hidden
+        font-size 26px
+        font-weight 400
+        color rgba(102, 102, 102, 1)
+        .icon-status
+          position absolute
+          right 10px
+          bottom 10px
+          height 22px
+          line-height: 22px
+          display none
+          color #007AFF
+        &.expired
+          background #E6E6E6
+          border-color #E6E6E6
+          color #666666
+        &.can-use
+          background #ffffff
+          border-color #DDE4E8
+          color #666666
+        &.used
+          background #FFF4F3
+          border-color #DDE4E8
+          color #FF506B
+        &.selected
+          background #E7F2FF
+          border-color #007AFF
+          color #007AFF
+          .icon-status
+            display block
+  // 操作条
+  .bar-actions
+    flex none
+    height 120px
+    padding 17px 30px
+    background #ffffff
+    box-shadow 0px -4px 13px 0px rgba(100, 120, 160, 0.08)
+    box-sizing border-box

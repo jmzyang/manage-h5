@@ -1,0 +1,125 @@
+.contacts-check-all
+  flex none
+  height 110px
+  background #ffffff
+  border-radius 6PX
+  display flex
+  .van-checkbox__icon
+    flex none
+    width 98px
+    height 100%
+    text-align center
+    & > i 
+      margin-top calc(50% - 20px)
+      width 36px
+      height 36px
+      line-height 36px
+      border-radius 18px
+  .van-checkbox__label
+    flex 1
+    display flex
+    border-bottom #F8F8F8 1PX solid
+    line-height 110px
+    font-size 32px
+    font-weight 400
+    color #303030
+.contacts-item
+  height 125px
+  box-sizing border-box
+  line-height 125px
+  display flex
+  .van-checkbox__icon
+    flex none
+    width 112px
+    height 100%
+    text-align center
+    & > i 
+      margin-top calc(50% - 20px)
+      width 40px
+      height 40px
+      line-height 40px
+      border-radius 20px
+  .van-checkbox__label
+    flex 1
+    display block
+    overflow hidden
+    border-bottom #F8F8F8 1PX solid
+    line-height 110px
+    margin-left 0
+    display flex
+    // 组织机构
+    .org-name
+      flex 1
+      margin-right 0
+      font-size 32px
+      font-weight 400
+      color #303030
+      .count
+        font-weight:400
+        color #888888
+        .count-checked
+          color #007AFF
+    .next-level
+      flex none
+      position relative
+      width 155px
+      text-align center
+      font-weight 400
+      color #007AFF
+      font-size 32px
+      &:after
+        position absolute
+        left 0
+        top 35px
+        bottom 35px
+        width 1PX
+        background #D8D8D8
+        z-index 2
+      .iconfont
+        font-size 30px
+        margin-right 8px
+      &.disabled
+        color #B2B2B2
+    // 联系人
+    .avatar
+      flex none
+      padding 0
+      width 70px
+      height 70px
+      line-height 70px
+      border-radius 35px
+      margin-top 19px
+      margin-right 22px
+      background #3296FB
+      text-align center
+      font-size 28px      
+      color #ffffff
+      img
+        width 72px
+        height 72px
+        border-radius 50%
+    .name
+      flex 1
+      margin-top 17px
+      font-weight 400
+      color #007AFF
+      font-size 32px
+      h2
+        margin 0
+        padding 0
+        height 42px
+        font-size 30px
+        font-weight 400
+        color #333333
+        line-height 42px
+      p
+        height 33px
+        font-size 24px
+        font-weight 400
+        color #B2B2B2
+        line-height 33px
+    .contact
+      .phone, .email
+        font-size 24px
+        font-weight 400
+        color r #B2B2B2

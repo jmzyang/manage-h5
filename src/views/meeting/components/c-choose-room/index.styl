@@ -1,0 +1,277 @@
+.room-box
+  .submit-header-meeting-room
+    position absolute
+    top 14px
+    right 15px
+    width auto
+    display inline-block
+    padding 0 15px
+    height 60px
+    line-height 60px
+    font-size 30px
+    color #FFFFFF
+    background #007AFF
+    border none
+  .room-search
+    position relative
+    height 88px
+    background #E5E5E5
+    display flex
+    .room-filter
+      margin-top 6px
+      width 154px
+      font-size 28px
+      font-weight 400
+      color #333333
+      height 62px
+      line-height 62px
+      text-align center
+      .iconfont
+        font-size 30px
+    .room-search-input
+      position relative
+      flex 1
+      height 62px
+      margin 13px 13px 0
+      background white
+      line-height 62px
+      padding 0 12px 0 64px
+      box-sizing border-box
+    .icon-search-wrap
+      position absolute
+      left 20px
+      text-align center
+      line-height 62px
+      .iconfont
+        font-size 30px
+        color #A9A9A9
+  .search-close
+    line-height 44px
+  .room-container
+    flex 1
+    padding 0
+    display flex
+    flex-direction column
+    overflow hidden
+    .room-choice-main
+      flex 1
+      display flex
+      overflow hidden
+      .room-gather
+        flex none
+        width 267px
+        background-color #F5F5F5
+        position relative
+        height 100%
+        overflow-y auto
+        .room-name
+          padding 0px 20px
+          line-height 88px
+          font-size 28px
+          color #333333
+          text-overflow ellipsis
+          white-space nowrap
+          overflow hidden
+          box-sizing border-box
+        .selection
+          background-color #FFFFFF
+          font-weight bold
+      .room-list
+        flex 1
+        background-color #FFFFFF
+        display flex
+        flex-direction column
+        padding 0 20px
+        overflow hidden
+        box-sizing border-box
+        .bar-status-color
+          flex none
+          display flex
+          margin 24px 0
+          justify-content space-between
+          .item
+            position relative
+            padding 0 0 0 40px
+            height 32px
+            font-size 24px
+            font-weight 400
+            color #888888
+            line-height 32px
+            box-sizing border-box
+            &:before
+              position absolute
+              left 0
+              top 3px
+              width 24px
+              height 24px
+              content ''
+              border-radius 1PX
+            &.locked
+              &:before
+                background #CC73E1
+            &.expired
+              &:before
+                background #F0A046
+            &.can-use
+              &:before
+                background #FFFFFF
+                border 1PX solid #DDE4E8
+            &.used
+              &:before
+                background #FF4E4E
+            &.selected
+              &:before
+                background #007AFF
+        .room-list-header
+          flex none
+          line-height 93px
+          border-bottom 1PX solid #E1E8EB
+          height 93px
+          display flex
+          background #ffffff
+          .header-title
+            font-size 28px
+            color #333333
+            flex 1
+            text-overflow ellipsis
+            white-space nowrap
+            overflow hidden
+          .header-operation
+            width 120px
+            flex none
+            color #666666
+            font-size 24px
+            text-align right
+            .van-checkbox
+              .van-checkbox__icon
+                display none
+              .van-checkbox__label
+                color #007AFF
+        .room-card-scroll
+          position relative
+          flex 1
+          overflow hidden
+          .room-card-container
+            width 100%
+            padding 10px 0
+            box-sizing: border-box
+            //- .item.can-use 可用，默认样式
+            //- .item.selected 选中
+            //- .item.can-not 不可用状态，（会场被禁用或者终端异常）        
+            //- .item.used 已占用
+            //- .item.lock 锁定
+            .room-card
+              position: relative
+              display 100%
+              height 120px
+              line-height 45px
+              border 1PX solid #E1E8EB
+              border-radius 6px
+              margin 25px 0
+              padding 15px 20px
+              display flex
+              flex-direction column
+              .item-header
+                flex 1
+                display flex
+                .name
+                  color #333333
+                  font-size 28px
+                  flex 1
+                  overflow hidden
+                  text-overflow ellipsis
+                  white-space nowrap
+                  font-weight 500
+                .number
+                  color #666666
+                  font-size 24px
+                  margin-left 10px
+              .item-meta
+                flex 1
+                display flex
+                .equipment
+                  flex 1
+                  height 30px
+                  margin-right 12px
+              .status
+                position absolute
+                width 40px
+                bottom 15px
+                right 15px
+                .iconfont
+                  font-size 20px
+                  color #007AFF
+              .actions-detail
+                position absolute
+                bottom 15px
+                right 15px
+                span
+                  background-color #FE5E57
+                  border-radius 3px
+                  font-size 24px
+                  color #FFFFFF
+                  font-weight 500
+                  padding 6px 14px
+              &.selected
+                color #007AFF                
+                background-color #F5FAFF
+                border-color darken(@background-color, 15%)
+                .nanme
+                  color @color 
+                .number
+                  color @color
+              &.can-not                
+                color #F0A046
+                background-color #FFF8EF
+                border-color darken(@background-color, 15%)
+                .nanme
+                  color @color
+                .number
+                  color @color              
+              &.used
+                color #fe5e57
+                background-color #FFF8F7
+                border-color darken(@background-color, 15%)
+                .nanme
+                  color @color
+                .number
+                  color @color
+              &.lock
+                color #CC73E1
+                background-color #FDF6FF
+                border-color darken(@background-color, 15%)
+                .nanme
+                  color @color
+                .number
+                  color @color
+    .room-operation
+      position absolute
+      z-index 9
+      width 100px
+      height 100px
+      background linear-gradient(148deg, rgba(92, 163, 255, 1) 0%, rgba(0, 122, 255, 1) 100%)
+      box-shadow 3px 13px 15px 0px rgba(72, 134, 255, 0.36), 1px 3px 14px 0px rgba(72, 134, 255, 0.19)
+      border-radius 50px
+      bottom 28px
+      right 90px
+      line-height 100px
+      text-align center
+      color #FFFFFF
+      font-size 28px
+      font-weight 500
+      .attendees
+        color #fff
+        font-size 40px
+      span
+        position absolute
+        left 72px
+        top 0px
+        height 34px
+        border-radius 18px
+        border 2px solid #fff
+        color #fff
+        line-height 34px
+        font-size 22px
+        font-weight 400
+        background-color #FF506B
+        padding 0 9px

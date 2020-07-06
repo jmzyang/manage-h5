@@ -1,0 +1,49 @@
+.group-card
+  position: static
+  .contacts-check-all
+    display flex
+    .van-checkbox__label
+      position relative
+      .group-name
+        flex 1
+        line-height 110px
+      .toggle
+        flex none
+        width 88px
+        height 110px
+        line-height 110px
+        text-align center
+        .title-arrow
+          display inline-block
+          transform rotate(90deg)
+          font-size 20px
+          color #ABABAB
+          transition .1s
+          &.active
+            transform rotate(-90deg)
+      .issue-operation-box
+        flex none
+        position relative
+        width 88px
+        line-height 110px
+        padding 0 30px
+        font-size 40px
+        font-weight bold
+        z-index 9
+        .issue-operation
+          position fiexed
+          top 50%
+          margin-top -80px
+          left 50%
+          margin-left -49px
+          width 98px
+          height 160px
+          background rgba(0, 0, 0, 0.76)
+          border-radius 6px
+          padding 0px 26px
+          line-height 80px
+          text-align center
+          & > i
+            display block
+            font-size 30px
+            color #FFFFFF

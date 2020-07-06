@@ -1,0 +1,126 @@
+.van-tab {
+  flex: 1;
+  cursor: pointer;
+  min-width: 0;
+  padding: 0 5px;
+  font-size: 14px;
+  position: relative;
+  color: #7d7e80;
+  line-height: 44px;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.van-tab span {
+  display: block;
+}
+.van-tab--active {
+  font-weight: 500;
+  color: #323233;
+}
+.van-tab--disabled {
+  color: #c8c9cc;
+}
+.van-tabs {
+  position: relative;
+}
+.van-tabs__wrap {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  overflow: hidden;
+  position: absolute;
+}
+.van-tabs__wrap--page-top {
+  position: fixed;
+}
+.van-tabs__wrap--content-bottom {
+  top: auto;
+  bottom: 0;
+}
+.van-tabs__wrap--scrollable .van-tab {
+  flex: 0 0 22%;
+}
+.van-tabs__wrap--scrollable .van-tab--complete {
+  flex: 1 0 auto;
+}
+.van-tabs__wrap--scrollable .van-tabs__nav {
+  overflow: hidden;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.van-tabs__wrap--scrollable .van-tabs__nav::-webkit-scrollbar {
+  display: none;
+}
+.van-tabs__nav {
+  display: flex;
+  user-select: none;
+  position: relative;
+  background-color: #fff;
+}
+.van-tabs__nav--line {
+  height: 100%;
+  padding-bottom: 15px;
+  /* 15px padding to hide scrollbar in mobile safari */
+  box-sizing: content-box;
+}
+.van-tabs__nav--card {
+  margin: 0 15px;
+  border-radius: 2px;
+  box-sizing: border-box;
+  border: 1px solid #f44;
+  height: 30px;
+}
+.van-tabs__nav--card .van-tab {
+  color: #f44;
+  border-right: 1px solid #f44;
+  line-height: 28px;
+}
+.van-tabs__nav--card .van-tab:last-child {
+  border-right: none;
+}
+.van-tabs__nav--card .van-tab.van-tab--active {
+  color: #fff;
+  background-color: #f44;
+}
+.van-tabs__nav--card .van-tab--disabled {
+  color: #c8c9cc;
+}
+.van-tabs__line {
+  z-index: 1;
+  left: 0;
+  bottom: 15px;
+  height: 3px;
+  position: absolute;
+  border-radius: 3px;
+  background-color: #f44;
+}
+.van-tabs__content--animated {
+  overflow: hidden;
+}
+.van-tabs__track {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  will-change: left;
+}
+.van-tabs--line {
+  padding-top: 44px;
+}
+.van-tabs--line .van-tabs__wrap {
+  height: 44px;
+}
+.van-tabs--card {
+  padding-top: 30px;
+}
+.van-tabs--card .van-tabs__wrap {
+  height: 30px;
+}
+.van-tabs .van-tab__pane {
+  width: 100%;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+/*# sourceMappingURL=index.css.map */

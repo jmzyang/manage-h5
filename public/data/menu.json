@@ -1,0 +1,51 @@
+[{
+        "id": 1,
+        "parent_id": 0,
+        "index": "meeting.notify",
+        "name": "meeting",
+        "path": "/",
+        "icon": "icon-menu-meeting"
+    },
+    {
+        "id": 2,
+        "parent_id": 0,
+        "index": "meetingVerify.index",
+        "name": "examine",
+        "path": "/meeting-verify",
+        "icon": "icon-menu-review",
+        "authorization": "1113"
+    },
+    {
+        "id": 3,
+        "parent_id": 0,
+        "index": "meeting.create",
+        "name": "establish",
+        "path": "/meeting/create",
+        "icon": "icon-menu-create"
+    },
+    {
+        "id": 4,
+        "parent_id": 0,
+        "index": "meetingRoom.index",
+        "name": "conferenceHall",
+        "query": {
+            "meetingId": "",
+            "videoConference": 1,
+            "startTime": "",
+            "duration": 0,
+            "mutation": "M_MEETING_ROOM_SELF",
+            "stateName": "meetingRoomSelf",
+            "businessType": 2
+        },
+        "path": "/meeting-room",
+        "icon": "icon-menu-meeting-room"
+    },
+    {
+        "id": 5,
+        "parent_id": 0,
+        "index": "my",
+        "name": "my",
+        "path": "/my",
+        "icon": "icon-menu-my"
+    }
+]

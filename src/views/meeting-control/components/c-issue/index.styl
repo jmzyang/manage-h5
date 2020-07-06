@@ -1,0 +1,117 @@
+.c-issue-container
+  margin 40px 5px 0px 5px
+  margin-top 40px
+  .no-issue
+    text-align center
+    margin 0 auto
+    .empty-img
+      width 200px
+      height 200px
+      background url('~@/assets/images/meeting/no-issue.png') no-repeat center center
+      background-size 100% 100%
+      margin 0 auto
+    .empty-content
+      font-weight 500
+      font-size 28px
+      p
+        color #979797
+        font-size 24px
+        line-height 38px
+  .meeting-issue-box
+    .van-cell__title
+      padding 20px 0px
+      line-height 0
+      & > span 
+        display inline-block
+        line-height 1.5
+        position relative
+        top 50%
+        transform translateY(-50%)
+    .issue-right
+      position relative
+      border-left 2PX solid #E4EBF1
+      margin 0px 0px 0px 20px
+      .file-list-box
+        margin 0px 40px 0px 24px
+        .file-list
+          padding 20px
+          display flex
+          background-color #FBFBFB
+          border 1PX solid #EBEBEB
+          border-radius 8px
+          margin-bottom 10px
+          .img 
+            flex none
+            width 62px
+            height 70px
+            display inline-block
+            background url('~@/assets/images/public/txt.png') no-repeat center center
+            background-size 100% 100%
+          .doc,.DOC,.docx,.DOCX
+            background-image url('~@/assets/images/public/word.png')
+          .jpg,.JPG,.png,.PNG,.gif,.GIF,.bmp,.BMP,.pic,.PIC,.tif,.TIF
+            background-image url('~@/assets/images/public/img.png')
+          .rar,.RAR,.zip,.ZIP,.arj,.ARJ
+            background-image url('~@/assets/images/public/zip.png')
+          .wav,.WAV,.aif,.AIF,.au,.AU,.mp3,.MP3,.mp4,.MP4,.mp5,.MP5,.ram,.RAM,.wma,.WMA,.mmf,.MMF,.amr,.AMR,.aac,.AAC,.flac,.FLAC
+            background-image url('~@/assets/images/public/wav.png')
+          .avi,.AVI,.mpg,.MPG,.mov,.MOV,.swf,.SWF
+            background-image url('~@/assets/images/public/mov.png')
+          .pdf,.PDF
+            background-image url('~@/assets/images/public/pdf.png')
+          .ppt,.PPT
+            background-image url('~@/assets/images/public/ppt.png')
+          .xls,.XLS,.xlsx,.XLSX
+            background-image url('~@/assets/images/public/xls.png')
+          .losureContent
+            flex 1
+            padding 6px 22px
+            width 0px
+            word-wrap break-word
+            & > p:first-child
+              color #888888
+              font-size 26px
+              line-height 37px
+            & > p:last-child
+              font-size 24px
+              color #B2B2B2
+              line-height 33px
+          .download
+            flex none
+            color #007AFF
+            font-size 26px
+            position relative
+            width 50px
+            i
+              font-size 42px
+              vertical-align sub
+              margin-right 11px
+              position absolute
+              top 50%
+              left 50%
+              transform translate(-50%, -50%)
+        & > .file-list:last-child
+          border none
+      .attendee
+        color #666666
+        font-size 26px
+        line-height 36px
+        margin 25px 40px 0px 45px
+    .issue-btn
+      text-align center
+      margin-top 40px
+      padding-bottom 30px
+      & > button
+        text-align center
+        width 180px
+        border 1PX solid rgba(0,122,255,1)
+        border-radius 30px
+        color #007AFF
+        font-size 26px
+        line-height 0px
+        height 60px
+        margin 0px 10px
+      .sendNotice
+        background-color #007AFF
+        color #FFFFFF
+        border none
